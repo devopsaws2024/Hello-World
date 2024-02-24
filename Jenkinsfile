@@ -14,7 +14,7 @@ pipeline{
         stage('pre-build step') {
             steps {
 		sh '''
-                echo "Pre Build Step"
+                echo "Pre Build Step for Webhook Trigges the pipeline on push event"
 		'''
 	    }
 	}
@@ -75,7 +75,7 @@ pipeline{
          stage('post-build step') {
             steps {
 		sh '''
-                echo "Successfull Pipeline"
+                echo "Successfull Pipeline for Tomcat Deployment"
 		'''
 	    }
 	}
