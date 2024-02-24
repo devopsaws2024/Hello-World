@@ -58,7 +58,7 @@ pipeline{
                       "files": [
                         {
                           "pattern": "*.war",
-                           "target": "local-snapshot-repo"
+                           "target": "maven-snapshots"
                         }
                     ]
                 }'''
