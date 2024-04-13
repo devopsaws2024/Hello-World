@@ -58,7 +58,7 @@ pipeline{
                       "files": [
                         {
                           "pattern": "*.war",
-                           "target": "maven-snapshots"
+                           "target": "local-snapshots"
                         }
                     ]
                 }'''
@@ -68,7 +68,7 @@ pipeline{
         stage ('Tomcat Deployment') {
            steps {
              script {
-                 deploy adapters: [tomcat7(credentialsId: 'tomcat-credentials', path: '', url: 'http://3.142.134.33:8080')], contextPath: '/webapp-app', onFailure: false, war: 'webapp/target/webapp.war' 
+                 deploy adapters: [tomcat7(credentialsId: 'tomcat-credentials', path: '', url: 'http://52.15.212.198:8080')], contextPath: '/webapp-app', onFailure: false, war: 'webapp/target/webapp.war' 
                     }
                   }
            }
