@@ -7,7 +7,7 @@ WORKDIR /opt/tomcat
 RUN curl -O https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.109/bin/apache-tomcat-7.0.109.tar.gz
 RUN tar -xvf apache-tomcat-7.0.109.tar.gz
 RUN mv apache-tomcat-7.0.109/* /opt/tomcat/
-RUN yum -y install java-1.8.0*
+RUN yum -y install java-11*
 RUN java -version
 WORKDIR /opt/tomcat/webapps
 COPY  ./Project/Docker-Kubernetes/webapp.war /opt/tomcat/webapps/
