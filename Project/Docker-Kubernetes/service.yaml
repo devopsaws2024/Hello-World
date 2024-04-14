@@ -9,7 +9,7 @@ spec:
    port: 80
    targetPort: 8080
  externalIPs:
- - 18.118.14.194
+ - 13.58.24.25
  selector:
    app: my-app
  type: LoadBalancer
