@@ -1,3 +1,2 @@
 this is test sample file for poll scm
-poll scm builds
-testing is going on
+n
